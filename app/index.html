@@ -14,7 +14,7 @@
     <header class="header">
         <div class="header__top">
             <div class="container">
-                <div class="header__inner d-flex">
+                <div class="header__top-inner d-flex">
                     <div class="header__top-list d-flex">
                         <li class="header__top-item">
                             <div class="header__search"></div>
@@ -35,7 +35,7 @@
         </div>
         <div class="header__main">
             <div class="container">
-                <div class="header__inner d-flex">
+                <div class="header__main-inner d-flex">
                     <a class="logo" href="#">
                         <img class="logo__img" src="images/logo.png" alt="Государственный музей">
                     </a>
@@ -85,8 +85,54 @@
 
     <main class="main">
 
-        <section class="hero" style="background-image: url('images/hero-slider-bg.jpg');">
+        <section class="hero">
+            <div class="swiper-container hero__slider">
+                <div class="swiper-wrapper hero__wrapper">
+                    <div class="swiper-slide hero__slide" style="background-image: url('images/hero-slider-bg.jpg');"></div>
+                    <div class="swiper-slide hero__slide" style="background-image: url('images/hero-slider-bg2.jpg');"></div>
+                    <div class="swiper-slide hero__slide" style="background-image: url('images/hero-slider-bg.jpg');"></div>
+                    <div class="swiper-slide hero__slide" style="background-image: url('images/hero-slider-bg.jpg');"></div>
+                </div>
+            </div>
+            <div class="container hero__inner">
+                <div class="hero__box">
+                    <div class="hero__title">
+                        Основной баннер
+                    </div>
+                    <p class="hero__text">
+                        содержащий графический материал с информацией о проводимых мероприятиях
+                    </p>
+                    <a class="hero__link" href="#">
+                        Подробнее
+                    </a>
+                    <div class="hero__nav">
+                        <button class="hero__btn hero__btn--prev"></button>
+                        <button class="hero__btn hero__btn--next"></button>
+                    </div>
+                </div>
+                <div class="swiper-pagination hero__pagination">
+                    
+                </div>
+                <div class="hero__online">
+                    online трансляция
+                </div>
+            </div>
+        </section>
 
+        <section class="galleries">
+            <div class="container">
+                <div class="galleries__inner d-flex">
+                    <div class="galleries__item">
+                        
+                    </div>
+                    <div class="galleries__item">
+                        
+                    </div>
+                    <div class="galleries__item">
+                        
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>

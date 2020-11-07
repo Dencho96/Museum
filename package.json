@@ -19,5 +19,8 @@
     "gulp-uglify": "^3.0.2",
     "normalize.css": "^8.0.1"
   },
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "swiper": "^6.3.2"
+  }
 }

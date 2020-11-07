@@ -1,11 +1,18 @@
 .header {
     position: absolute;
+    z-index: 10;
     top: 0;
     left: 0;
     right: 0;
 
     &__top {
         min-height: 66px;
+    }
+
+    &__top-inner {
+        min-height: 66px;
+        justify-content: space-between;
+        align-items: center;
     }
 
     &__top-list {
@@ -20,7 +27,8 @@
         }
     }
 
-    &__search, &__eye {
+    &__search,
+    &__eye {
         height: 18px;
         background-size: cover;
         cursor: pointer;
@@ -28,37 +36,48 @@
 
     &__search {
         width: 18px;
-        background-image: url('../../images/header-search.svg');
+        background-image: url('../images/header-search.svg');
     }
 
-    &__buy, &__phone{
+    &__buy,
+    &__phone {
         font-family: 'OpenSans', sans-serif;
     }
 
     &__buy {
+        position: relative;
         min-width: 137px;
-        padding: 8px 31px 7px 16px;
+        padding: 6px 31px 5px 16px;
         border: 2px solid $gold;
         font-size: 12px;
         font-weight: 600;
         color: $gold;
         text-transform: uppercase;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 17px;
+            height: 100%;
+            border-right: 2px dashed $gold;
+        }
     }
 
     &__phone {
-        color: white;
+        color: $white;
     }
 
     &__eye {
         width: 25px;
-        background-image: url('../../images/header-eye.svg');
+        background-image: url('../images/header-eye.svg');
     }
 
     &__main {
         background-color: rgba($dark-blue, 0.8)
     }
 
-    &__inner {
+    &__main-inner {
         min-height: 68px;
         justify-content: space-between;
         align-items: center;
@@ -71,8 +90,9 @@
     }
 
     &__link {
-        color: #F9F6F3;
+        color: $white;
         @include ubuntu500;
         font-size: 16px;
+        height: 100%;
     }
 }

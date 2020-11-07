@@ -8,7 +8,12 @@
     font-weight: 500;
 }
 
-@mixin ubuntu700{
+@mixin ubuntu700 {
     font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+@mixin bookantiqua {
+    font-family: 'BookAntiqua', sans-serif;
     font-weight: 700;
 }

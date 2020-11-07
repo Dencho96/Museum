@@ -1,0 +1,10 @@
+.galleries {
+    &__inner {
+        justify-content: space-between;
+    }
+
+    &__item {
+        max-width: 390px;
+        width: 100%;
+    }
+}

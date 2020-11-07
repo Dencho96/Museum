@@ -1,6 +1,126 @@
-.hero{
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+.hero {
+    position: relative;
+
+    &__slider {
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        &::before {
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.05) 100%);
+        }
+
+        &::after {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+        }
+    }
+
+    &__slide {
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    &__inner {
+        position: relative;
+    }
+
+    &__box, &__pagination, &__online{
+        position: absolute;
+        z-index: 5;
+    }
+
+    &__box {
+        left: 0;
+        bottom: 88px;
+        color: $white;
+    }
+
+    &__title,
+    &__link {
+        @include bookantiqua;
+    }
+
+    &__title {
+        font-size: 50px;
+        line-height: 60px;
+        letter-spacing: 0.02em;
+    }
+
+    &__text {
+        margin-bottom: 42px;
+        max-width: 550px;
+        @include ubuntu400;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.02em;
+    }
+
+    &__link {
+        position: relative;
+        min-width: 200px;
+        margin-bottom: 122px;
+        padding: 11px 75px 10px 31px;
+        border: 2px solid $gold;
+        font-size: 13px;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 13px;
+            right: 32px;
+            width: 22px;
+            height: 9px;
+            background-image: url('../images/arrow-right.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    &__btn {
+        border: none;
+        background-color: transparent;
+        width: 22px;
+        height: 22px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        cursor: pointer;
+
+        &--prev {
+            margin-right: 40px;
+            background-image: url('../images/pagination-prev.svg');
+        }
+
+        &--next {
+            background-image: url('../images/pagination-next.svg');
+        }
+    }
+
+    &__pagination{
+        bottom: 15px;
+        left: 0;
+        right: 0;
+    }
+
+    &__online {
+        bottom: 77px;
+        right: 0;
+        max-width: 110px;
+        text-align: center;
+        color: #FAF7F3;
+        @include bookantiqua;
+        font-size: 18px;
+        letter-spacing: 0.02em;
+    }
 }
