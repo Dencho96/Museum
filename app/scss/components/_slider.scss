@@ -1,0 +1,32 @@
+.slider {
+    height: 348px;
+    margin-left: calc((100vw - 1295px)/2);
+    margin-bottom: 30px;
+
+    &__slide {
+        object-fit: cover;
+        height: 348px;
+
+        &--wide {
+            width: 620px;
+        }
+
+        &--tri-four {
+            width: 268px;
+        }
+
+        &--square {
+            width: 348px;
+        }
+
+        &--four-tri {
+            width: 452px;
+        }
+    }
+
+    &__nav {
+        display: block;
+        max-width: 90px;
+        margin: 0 auto;
+    }
+}

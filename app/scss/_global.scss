@@ -27,11 +27,16 @@ a {
     padding: 0;
 }
 
+address {
+    font-style: normal;
+}
+
 body {
     overflow-x: hidden;
     background-color: white;
     font-size: 15px;
     font-weight: 400;
+    letter-spacing: 0.02em;
 }
 
 .container {

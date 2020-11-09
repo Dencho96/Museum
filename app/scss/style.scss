@@ -3,7 +3,19 @@
 @import 'mixins';   
 @import 'global';
 
+
+@import 'components/slider';
+@import 'components/slider-nav';
+
 @import 'components/header';
 
 @import 'page-index/hero';
-@import 'page-index/galleries'
+@import 'page-index/galleries';
+@import 'page-index/tiles';
+@import 'page-index/news';
+@import 'page-index/photogallery';
+@import 'page-index/partners';
+
+@import 'components/footer';
+
+@import 'page-index/media';

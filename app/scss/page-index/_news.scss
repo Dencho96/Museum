@@ -1,0 +1,79 @@
+.news {
+
+    &__pic {
+        width: 400px;
+        height: 214px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+
+    &__inner {
+        justify-content: space-between;
+        margin-bottom: 45px;
+    }
+
+    &__title,
+    &__link {
+        @include bookantiqua;
+    }
+
+    &__title,
+    &__text {
+        color: $dark-blue;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+        color: $dark-blue;
+        font-size: 36px;
+        line-height: 43px;
+    }
+
+    &__item {
+        max-width: 400px;
+        width: 100%;
+
+        &+& {
+            margin-left: 20px;
+        }
+    }
+
+    &__pic {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    &__date,
+    &__text {
+        @include ubuntu400;
+    }
+
+    &__date,
+    &__link {
+        color: $gold;
+    }
+
+    &__date {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    &__text {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    &__link {
+        text-transform: uppercase;
+
+        &--all {
+            display: block;
+            max-width: 220px;
+            margin: 0 auto 100px;
+            padding: 10px 52px;
+            font-size: 14px;
+            border: 2px solid $gold;
+        }
+    }
+}

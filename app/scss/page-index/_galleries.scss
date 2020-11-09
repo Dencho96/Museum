@@ -1,10 +1,69 @@
 .galleries {
+    margin-bottom: 100px;
+
     &__inner {
         justify-content: space-between;
     }
 
     &__item {
-        max-width: 390px;
+        position: relative;
+        max-width: 400px;
         width: 100%;
+        padding-left: 80px;
+        color: $dark-blue;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &:nth-child(1)::before {
+            width: 65px;
+            height: 42px;
+            background-image: url('../images/gallery-1.png');
+        }
+
+        &:nth-child(2)::before {
+            top: -7px;
+            width: 47px;
+            height: 60px;
+            background-image: url('../images/gallery-2.svg');
+        }
+
+        &:nth-child(3)::before {
+            top: -8px;
+            width: 54px;
+            height: 62px;
+            background-image: url('../images/gallery-3.svg');
+        }
+    }
+
+    &__title {
+        max-width: 320px;
+        margin-bottom: 28px;
+        @include bookantiqua;
+        font-size: 19px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+    }
+
+    &__address,
+    &__shedule {
+        @include ubuntu400;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    &__address {
+        margin-bottom: 17px;
+    }
+
+    &__link{
+        svg{
+            stroke: $gold;
+        }
     }
 }

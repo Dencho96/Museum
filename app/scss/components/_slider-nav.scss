@@ -1,0 +1,22 @@
+.slider-nav {
+
+    &__btn {
+        border: none;
+        background-color: transparent;
+        width: 22px;
+        height: 22px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        cursor: pointer;
+
+        &--prev {
+            margin-right: 40px;
+            background-image: url('../images/slider-prev.svg');
+        }
+
+        &--next {
+            background-image: url('../images/slider-next.svg');
+        }
+    }
+
+}
