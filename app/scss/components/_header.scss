@@ -11,12 +11,10 @@
 
     &__top-inner {
         min-height: 66px;
-        justify-content: space-between;
         align-items: center;
     }
 
     &__top-list {
-        justify-content: space-between;
         align-items: center;
         margin-left: auto;
     }
@@ -84,6 +82,7 @@
     }
 
     &__item {
+        display: inline-block;
         &+& {
             margin-left: 38px;
         }
@@ -95,4 +94,22 @@
         font-size: 16px;
         height: 100%;
     }
+
+    &__btn {
+        display: none;
+    }
+
+    &__btn-inner,
+    &__btn-inner::after,
+    &__btn-inner::before,
+    &__btn.is-active &__btn-inner,
+    &__btn.is-active &__btn-inner::after,
+    &__btn.is-active &__btn-inner::before {
+        width: 24px;
+        height: 3px;
+        background-color: $white;
+        border-radius: 0;
+    }
+
+
 }

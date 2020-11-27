@@ -1,0 +1,243 @@
+@media (max-width: 1310px) {
+    .photogallery{
+        padding: 0 15px;
+        &__slider{
+            margin-left: 0;
+        }
+    }
+}
+@media (max-width: 1220px) {
+    .header {
+        &__top-inner {
+            position: relative;
+            z-index: 1;
+            right: 88px;
+            min-height: 80px;
+        }
+
+        &__top-item {
+            &:last-child {
+                display: none;
+            }
+        }
+
+        &__main {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        &__main-inner {
+            min-height: 80px;
+        }
+
+        &__nav {
+            position: absolute;
+            top: 80px;
+            left: 0;
+            right: 0;
+            height: 100vh;
+            background-color: rgba($dark-blue, 1);
+            box-shadow: 2px -35px 50px 15px rgba($dark-blue, 1);
+            display: none;
+        }
+
+        &__item {
+            display: block;
+            margin: 0 !important;
+            text-align: center;
+
+            &+& {
+                border-top: 1px solid $white;
+            }
+        }
+
+        &__link {
+            display: block;
+            padding: 15px 0 15px;
+        }
+
+        &__btn {
+            display: block;
+        }
+    }
+
+    .hero {
+        &__online {
+            display: none;
+        }
+    }
+    .galleries{
+        margin-bottom: 95px;
+        &__item{
+            font-size: 12px;
+            line-height: 13px;
+            padding-left: 65px;
+            &:nth-child(1)::before{
+                height: 36px;
+                width: 55px;
+                top: -3px;
+            }
+            &:nth-child(2)::before{
+                height: 45px;
+                width: 34px;
+            }
+            &:nth-child(3)::before{
+                height: 48px;
+                width: 42px;
+            }
+        }
+        &__title{
+            height: 50px;
+            font-size: 14px;
+            line-height: 15px;
+        }
+    }
+    .tiles{
+        &__tile{
+            &--big{
+                height: 500px;
+                font-size: 36px;
+            }
+            &--ticket{
+                height: 186px;
+                font-size: 24px;
+            }
+            &--small{
+                height: 304px;
+                font-size: 22px;
+            }
+        }
+        &__title{
+            bottom: 8px;
+            left: 8px;
+        }
+    }
+
+    .news{
+        &__title{
+            font-size: 24px;
+        }
+        &__item{ 
+            max-width: 50%;
+            &:nth-child(3){
+                display: none;
+            }
+        }
+    }
+
+    .footer {
+        &__inner {
+            flex-wrap: wrap;
+        }
+
+        &__col {
+            max-width: 45%;
+            margin-bottom: 88px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        &__top-inner {
+            right: 70px;
+        }
+        &__search{
+            margin-top: -4px;
+        }
+        &__top-item {
+            &:nth-child(n+2) {
+                display: none;
+            }
+        }
+        
+    }
+
+    .hero{
+        &__title{
+            font-size: 30px;
+        }
+        &__text{
+            font-size: 13px;
+            line-height: 15px;
+        }
+        &__link{
+            margin-bottom: 85px;
+        }
+    }
+
+    .galleries{
+        &__inner{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item{
+            padding: 32px 0 32px 65px;
+            &+&{
+                margin-left: 0;
+                border-top: 2px solid #D5D5D8;
+            }
+            &::before{
+                top: 50% !important;
+                transform: translateY(-50%);
+            }
+        }
+        &__title{
+            height: auto;
+            margin-bottom: 0;
+        }
+        &__info{
+            display: none;
+        }
+    }
+    
+    .tiles{
+        &__inner{
+            flex-direction: column;
+        }
+        &__tile{
+            &--big, &--ticket, &--small{
+                max-width: 100%;
+            }
+            &--big{
+                height: 190px;
+                margin-bottom: 5px;
+            }
+            &--ticket, &--small{
+                height: 100px;
+            }
+            &--small{
+                &+&{
+                    margin: 5px 0 0;
+                }
+            }
+        }
+        &__aside{
+            height: auto;
+        }
+    }
+
+    .news{
+        &__inner{
+            flex-direction: column;
+        }
+        &__item{
+            max-width: 100%;
+            &+&{
+                margin: 45px 0 0;
+            }
+            &:nth-child(3){
+                display: block;
+            }
+        }
+    }
+
+    .footer {
+        &__col {
+            max-width: 100%;
+            font-size: 14px;
+        }
+    }
+}

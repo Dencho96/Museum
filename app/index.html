@@ -38,10 +38,13 @@
             <div class="container">
                 <div class="header__main-inner d-flex">
                     <a class="logo" href="#">
-                        <img class="logo__img" src="images/logo.png" alt="Государственный музей">
+                        <picture class="logo__container">
+                            <source srcset="images/logo-1220.png" media="(max-width: 1220px)">
+                            <img class="logo__img" src="images/logo.png" alt="Государственный музей">
+                        </picture>
                     </a>
                     <nav class="header__nav">
-                        <ul class="header__list d-flex">
+                        <ul class="header__list">
                             <li class="header__item">
                                 <a class="header__link" href="#">
                                     Афиша
@@ -79,6 +82,11 @@
                             </li>
                         </ul>
                     </nav>
+                    <button class="hamburger hamburger--slider header__btn" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner header__btn-inner"></span>
+                        </span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -132,53 +140,52 @@
                             Государственный
                             художественный музей
                         </div>
-                        <address class="galleries__address">
-                            ул. Мира, 2
-                        </address>
-                        <div class="galleries__shedule">
-                            Пн, Вт — выходной
+                        <div class="galleries__info">
+                            <address class="galleries__address">
+                                ул. Мира, 2
+                            </address>
+                            <div class="galleries__shedule">
+                                Пн, Вт — выходной
+                            </div>
+                            <div class="galleries__shedule">
+                                Ср - Вс 11:00 — 19:00
+                            </div>
                         </div>
-                        <div class="galleries__shedule">
-                            Ср - Вс 11:00 — 19:00
-                        </div>
-                        <a class="galleries__link" href="#">
-                            <svg width="24" height="11" viewBox="0 0 24 11" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 5.35294H22M22 5.35294L18 1M22 5.35294L18 9.70588"
-                                    stroke-width="1.5" />
-                            </svg>
-                        </a>
+
                     </div>
                     <div class="galleries__item">
                         <a class="galleries__title" href="#">
                             Галерея-мастерская
                             художника Г. С. Райшева
                         </a>
-                        <address class="galleries__address">
-                            ул. Чехова, 1
-                        </address>
-                        <div class="galleries__shedule">
-                            Пн, Вт — выходной
-                        </div>
-                        <div class="galleries__shedule">
-                            Ср - Вс 11:00 — 19:00
-                        </div>
-                        <a class="galleries__link" href="#"></a>
+                        <div class="galleries__info">
+                            <address class="galleries__address">
+                                ул. Чехова, 1
+                            </address>
+                            <div class="galleries__shedule">
+                                Пн, Вт — выходной
+                            </div>
+                            <div class="galleries__shedule">
+                                Ср - Вс 11:00 — 19:00
+                            </div>
+                        </div>                        
                     </div>
                     <div class="galleries__item">
                         <a class="galleries__title" href="#">
                             Дом-музей народного художника СССР В. А. Игошева
                         </a>
-                        <address class="galleries__address">
-                            ул. Лопарева, 7
-                        </address>
-                        <div class="galleries__shedule">
-                            Пн, Вт — выходной
+                        <div class="galleries__info">
+                            <address class="galleries__address">
+                                ул. Лопарева, 7
+                            </address>
+                            <div class="galleries__shedule">
+                                Пн, Вт — выходной
+                            </div>
+                            <div class="galleries__shedule">
+                                Ср - Вс 11:00 — 19:00
+                            </div>
                         </div>
-                        <div class="galleries__shedule">
-                            Ср - Вс 11:00 — 19:00
-                        </div>
-                        <a class="galleries__link" href="#"></a>
+                        
                     </div>
                 </div>
             </div>

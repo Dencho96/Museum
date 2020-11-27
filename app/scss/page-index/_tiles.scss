@@ -9,7 +9,8 @@
         position: relative;
         @include bookantiqua;
         color: $white;
-        object-fit: cover;
+        background-size: cover;
+        background-position: center;
 
         &::after {
             content: "";

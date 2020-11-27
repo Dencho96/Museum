@@ -106,5 +106,15 @@
         @include bookantiqua;
         font-size: 18px;
         letter-spacing: 0.02em;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 117px;
+            height: 117px;
+            border-radius: 50%;
+            border: 2px solid $gold;
+            top: -34px;
+            left: -4px;
+        }
     }
 }
