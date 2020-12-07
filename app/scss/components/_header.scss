@@ -93,6 +93,10 @@
         @include ubuntu500;
         font-size: 16px;
         height: 100%;
+        transition: color 0.2s;
+        &:hover{
+            color: $gold;
+        }
     }
 
     &__btn {

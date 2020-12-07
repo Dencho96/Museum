@@ -66,6 +66,8 @@
 
     &__link {
         text-transform: uppercase;
+        transition-property: background-color, color;
+        transition-duration: 0.2s;
 
         &--all {
             display: block;
@@ -74,6 +76,11 @@
             padding: 10px 52px;
             font-size: 14px;
             border: 2px solid $gold;
+
+            &:hover {
+                background-color: $gold;
+                color: white;
+            }
         }
     }
 }

@@ -39,6 +39,7 @@
     }
 
     &__link{
+        transition: color 0.2s;
         &--social {
             position: relative;
             padding-left: 66px;
@@ -53,6 +54,10 @@
                 height: 54px;
                 background-image: url('../images/social-logo.svg');
             }
+        }
+
+        &:hover{
+            color: $gold;
         }
     }
 }

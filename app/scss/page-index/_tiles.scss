@@ -11,6 +11,7 @@
         color: $white;
         background-size: cover;
         background-position: center;
+        transition: color 0.2s;
 
         &::after {
             content: "";
@@ -62,6 +63,7 @@
                 top: auto;
                 background-image: url('../../images/ticket-decor-bottom.svg');
             }
+
         }
 
         &--small {
@@ -75,6 +77,11 @@
             &+& {
                 margin-left: 10px;
             }
+        }
+
+        
+        &:hover{
+            color: $gold;
         }
     }
 
